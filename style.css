@@ -1,0 +1,16 @@
+body {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    background: linear-gradient(135deg, rgb(78, 0, 78), rgb(144, 0, 110));
+    color: rgba(0, 102, 255, 0.793);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.text1 {
+    font-size: 32px;
+}
