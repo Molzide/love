@@ -4,7 +4,7 @@ body {
     justify-content: center;
     font-family: Brush Script MT, Brush Script Std, cursive;
     background: linear-gradient(135deg, rgb(78, 0, 78), rgb(144, 0, 110));
-    color: rgba(0, 102, 255, 0.793);
+    color: rgb(229, 255, 0);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
