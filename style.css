@@ -1,16 +1,82 @@
+.pirata-one-regular {
+    font-family: "Pirata One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
 body {
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    font-family: Brush Script MT, Brush Script Std, cursive;
-    background: linear-gradient(135deg, rgb(78, 0, 78), rgb(144, 0, 110));
-    color: rgb(229, 255, 0);
+    font-family: "Pirata One", system-ui;
+    font-size: 32px;
+    background: rgb(82, 0, 0);
+    color: #ff002b;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+.poemes {
+    background-color: rgba(0, 39, 0, 0.7);
+    border: 1px solid transparent;
+    border-radius: 12px;
+    box-shadow: 0 0 100px rgba(0, 39, 0, 0.7);
+    background-image: url(rose.jpg);
+    background-size: 90%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 90%;
+    overflow: hidden;
+    margin: 0 auto;
 }
 
-.text1 {
-    font-size: 32px;
+input[type="checkbox"] {
+    display: none;
+}
+label {
+    cursor: pointer;
+    color: #ff002b;
+    margin-top: 10px;
+    display: inline-block;
+    background-color:rgba(6, 69, 0, 0.915);
+    border: 0px solid rgba(0, 39, 0, 0.7);
+    box-shadow: 0 0 5px rgb(0, 39, 0);
+    width: 150px;
+    border-radius: 8px;
+    align-items: center;
+    transition: background-color 0.3s ease-in-out;
+}
+input[type="checkbox"]:checked + label + .poeme {
+    display: block;
+}
+label:hover {
+    background-color:rgba(5, 57, 1, 0.915);
+}
+.poeme:hover{
+    background-color:rgba(5, 57, 1, 0.915);
+}
+.poeme {
+    display: none;
+    margin-top: 10px;
+    margin: 10px auto;
+    border: 0px solid rgba(0, 39, 0, 0.7);
+    box-shadow: 0 0 5px rgb(0, 39, 0);
+    border-radius: 12px;
+    width: 560px;
+    padding: 3px;
+    text-align: center;
+    background-color:rgba(6, 69, 0, 0.915);
+    transition: background-color 0.3s ease-in-out;
+}
+.auteur{
+    text-align: right !important;
+    margin-right: 10px;
 }
