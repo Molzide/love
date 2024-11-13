@@ -22,6 +22,18 @@ body {
     text-align: center;
     box-sizing: border-box;
 }
+body::before {
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.7) 100%);
+    pointer-events: none;
+    position: fixed;
+    z-index: -1;
+}
+
 .poemes {
     background-color: rgba(0, 39, 0, 0.7);
     border: 1px solid transparent;
@@ -60,6 +72,8 @@ input[type="checkbox"]:checked + label + .poeme {
 }
 label:hover {
     background-color:rgba(5, 57, 1, 0.915);
+    text-decoration: underline;
+    text-decoration-style: dotted;
 }
 .poeme:hover{
     background-color:rgba(5, 57, 1, 0.915);
@@ -76,7 +90,6 @@ label:hover {
     background-color:rgba(6, 69, 0, 0.915);
     transition: background-color 0.3s ease-in-out;
 }
-
 .auteur{
     text-align: right !important;
     margin-right: 10px;
