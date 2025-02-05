@@ -7,8 +7,8 @@
 body {
     font-family: "Pirata One", system-ui;
     font-size: 32px;
-    background: rgb(82, 0, 0);
-    color: #ff002b;
+    background: rgb(204, 199, 183);
+    color: rgb(82, 67, 47);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -31,68 +31,102 @@ body::before {
     background: radial-gradient(circle, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.7) 100%);
     pointer-events: none;
     position: fixed;
-    z-index: -1;
+    z-index: -99;
 }
-
-.poemes {
-    background-color: rgba(0, 39, 0, 0.7);
-    border: 1px solid transparent;
-    border-radius: 12px;
-    box-shadow: 0 0 100px rgba(0, 39, 0, 0.7);
-    background-image: url(rose.jpg);
-    background-size: 90%;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    width: 90%;
-    overflow: hidden;
-    margin: 0 auto;
+@media only screen and (max-width: 768px) {
+    .poeme {
+        width: 65% !important;
+        font-size: 24px !important;
+    }
 }
 
 input[type="checkbox"] {
     display: none;
 }
+
+#firstlabel {
+    margin-top: 10px;
+}
+
 label {
     font-style: italic;
     cursor: pointer;
-    color: #ff002b;
-    margin-top: 10px;
+    color: rgb(82, 67, 47);
+    margin-bottom: 10px;
     display: inline-block;
-    background-color:rgba(6, 69, 0, 0.915);
-    border: 0px solid rgba(0, 39, 0, 0.7);
-    box-shadow: 0 0 5px rgb(0, 39, 0);
+    background-color:rgba(204, 199, 183, 0.915);
+    filter: drop-shadow(0 0 5px rgba(204, 199, 183, 0.7));
     width: 150px;
     border-radius: 8px;
     align-items: center;
     transition: background-color 0.3s ease-in-out;
+    border: 2px solid rgba(202, 191, 153, 0.915);
+    filter: drop-shadow(0 0 10px rgba(202, 191, 153, 0.915));
 }
 input[type="checkbox"]:checked + label + .poeme {
     display: block;
 }
 label:hover {
-    background-color:rgba(5, 57, 1, 0.915);
+    background-color:rgba(160, 156, 143, 0.915);
     text-decoration: underline;
     text-decoration-style: dotted;
 }
 .poeme:hover{
-    background-color:rgba(5, 57, 1, 0.915);
+    background-color:rgba(160, 156, 143, 0.915);
 }
 .poeme {
     display: none;
     margin-top: 10px;
     margin: 10px auto;
-    border: 0px solid rgba(0, 39, 0, 0.7);
     border-radius: 12px;
-    width: 560px;
+    width: 45%;
     padding: 3px;
     text-align: center;
-    background-color:rgba(6, 69, 0, 0.915);
-    transition: background-color 0.3s ease-in-out;
+    background-color:rgba(204, 199, 183, 0.915);
+    transition: all 0.3s ease-in-out;
+    border: 2px solid rgba(202, 191, 153, 0.915);
+    filter: drop-shadow(0 0 10px rgba(202, 191, 153, 0.915));
 }
 .auteur{
     text-align: right !important;
     margin-right: 10px;
     font-style: italic;
     text-decoration: underline;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    border-radius: 12px;
+    border: 2px solid rgba(202, 191, 153, 0.915);
+    filter: drop-shadow(0 0 10px rgba(202, 191, 153, 0.915));
+    width: 50%;
+    left: 25%;
+    bottom: 0;
+    background-color: rgba(204, 199, 183, 0.7);
+    margin-bottom: 10px;
+}
+
+#sidepic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 15%;
+    background-image: url(psyche.JPG);
+    background-size: cover;
+    background-position: 25% 0%;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 10px;
+    border: 2px solid rgba(202, 191, 153, 0.915);
+    filter: drop-shadow(0 0 10px rgba(202, 191, 153, 0.915));
+    pointer-events: none;
+    z-index: -5;
 }
