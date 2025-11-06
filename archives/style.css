@@ -38,9 +38,6 @@ body::before {
         width: 65% !important;
         font-size: 24px !important;
     }
-    news {
-        font-size: 24px !important;
-    }
 }
 
 input[type="checkbox"] {
@@ -90,14 +87,11 @@ label:hover {
     border: 2px solid rgba(202, 191, 153, 0.915);
     filter: drop-shadow(0 0 10px rgba(202, 191, 153, 0.915));
 }
-.date{
+.auteur{
     text-align: right !important;
     margin-right: 10px;
     font-style: italic;
     text-decoration: underline;
-}
-.last-one {
-    margin-bottom: 10000px;
 }
 footer {
     display: flex;
